@@ -8,10 +8,8 @@ def main() :
 
     country_df = pd.read_csv('data/country_wise_latest.csv')
 
-    if st.button('데이터프레임 보기'):
+    if st.checkbox('기본 데이터프레임 보기'):
         st.dataframe(country_df)
-    else :
-        st.write('')
 
 
 
