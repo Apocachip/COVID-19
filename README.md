@@ -1,1 +1,1 @@
-# COVID-19
+# NVIDIA & AMD GPUs Compare App
