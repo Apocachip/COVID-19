@@ -1,24 +1,21 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from app_about import run_about
+from app_eda import run_eda
+from app_home import run_home
 
 
 def main() :
-    st.title('코로나 예측')
+    menu = ['Home', 'EDA', 'About']
 
-    country_df = pd.read_csv('data/country_wise_latest.csv')
+    choice = st.sidebar.selectbox('메뉴', menu)
 
-    if st.checkbox('기본 데이터프레임 보기'):
-        st.dataframe(country_df)
-
-
-
-
-
-
-
-
-
-
+    if choice == menu[0] :
+        run_home()
+    if choice == menu[1] :
+        run_eda()
+    if choice == menu[2] :
+        run_about()
 if __name__ == '__main__' :
     main()
