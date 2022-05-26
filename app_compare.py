@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-
 def run_compare() :
     df = pd.read_csv('data/gpu_specs_v6.csv')
 
