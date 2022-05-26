@@ -6,7 +6,7 @@ from app_compare import run_compare
 from app_specs import run_specs
 
 def main() :
-    menu = ['Home', 'Compare', 'About']
+    menu = ['Specs', 'Compare', 'About']
 
     choice = st.sidebar.selectbox('메뉴', menu)
 
