@@ -17,3 +17,4 @@ def run_eda() :
 
     if choice_list :
         st.dataframe(df[choice_list])
+    
