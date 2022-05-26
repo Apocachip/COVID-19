@@ -4,5 +4,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+df = pd.read_csv('data/gpu_specs_v6.csv')
+
 def run_specs() :
-    st.title('연도별 그래픽카드 성능 증가율과 그래픽카드를 비교해보는 앱')
+    st.title('년도별 그래픽카드 성능 증가율')
+    
+    if st.button('전체 데이터 보기') :
+        st.dataframe(df)
+        if st.button('닫기') :
+            st.text('')
+
+    menu = df['releaseYear'].unique().tolist()
+
+    st.multiselect('년도를 골라주세요(최소2개)', menu)
+
+    
