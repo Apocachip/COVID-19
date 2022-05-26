@@ -1,4 +1,4 @@
-# NVIDIA & AMD GPUs Compare App
+# GPUs Compare App
 
 data by
 https://www.kaggle.com/datasets/alanjo/graphics-card-full-specs
