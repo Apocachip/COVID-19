@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = pd.read_csv('data/gpu_specs_v6.csv')
+df = pd.read_csv('data/GPUs.csv')
 
 def run_specs() :
     st.title('년도별 그래픽카드 성능 증가율')

@@ -1,4 +1,4 @@
 import streamlit as st
 
-def run_about() :
+def run_home() :
     st.subheader('')

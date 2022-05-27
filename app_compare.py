@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 
 def run_compare() :
-    df = pd.read_csv('data/gpu_specs_v6.csv')
+    df = pd.read_csv('data/GPUs.csv')
 
     m_columns = df['manufacturer'].unique()
     menu = m_columns.tolist()
