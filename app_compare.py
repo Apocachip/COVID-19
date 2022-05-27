@@ -12,7 +12,6 @@ def run_compare() :
     
     choice_manufacturer = st.selectbox('제조사 선택', menu)
 
-
     if choice_manufacturer :
         st.text(choice_manufacturer + '을/를 선택하셨습니다.')
 
@@ -43,6 +42,8 @@ def run_compare() :
 
             st.dataframe(product_choice2)
 
-    # st.text('선택1 과 선택2의 성능을 비교하며 선택1 또는 선택2가 높은것은 무엇이며,')
-    # st.text('얼마나 차이나고, 같은 년도에 출시한 다른 그래픽카드의 평균과 비교하여')
-    # st.text('선택1 또는 선택2가 평균보다 높은지 낮은지를 나타내주는 것') 
+    # 그래픽카드 이름으로 검색기능
+    # 그래픽카드 출시일로 검색기능
+    # 선택1 과 선택2의 성능을 비교하며 선택1 또는 선택2가 높은것은 무엇이며
+    # 얼마나 차이나고, 같은 년도에 출시한 다른 그래픽카드의 평균과 비교하여
+    # 선택1 또는 선택2가 평균보다 높은지 낮은지를 나타내주는 것
