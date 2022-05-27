@@ -6,7 +6,7 @@ import seaborn as sns
 
 df = pd.read_csv('data/GPUs.csv')
 
-def run_specs() :
+def run_eda() :
     st.title('년도별 그래픽카드 성능 증가율')
     
     if st.button('전체 데이터 보기') :
