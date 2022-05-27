@@ -24,24 +24,16 @@ def run_eda() :
     elif selected == radio_menu[1] :
         st.dataframe(df.describe())
 
-    col_list = df.columns[ 2 :]
-    selected_col = st.selectbox('컬럼별 최대값, 최소값', col_list)
-
-    if selected_col :
-
-        df_max = df.loc[df[selected_col] == df[selected_col].max() , ]
-        df_min = df.loc[df[selected_col] == df[selected_col].min() , ]
-        st.dataframe(df_max)
-        st.dataframe(df_min) 
-
     if st.button('워드클라우드 보기') :
-        plt.figure(figsize= (10, 6))
+        fig = plt.figure(figsize=(10, 6))
         plt.imshow(wc)
         plt.tight_layout(pad=0)
         plt.axis('off')
         plt.show()
-        st.pyplot()
+        st.pyplot(fig)
         if st.button('닫기') :
             st.text(' ')
+    if st.button('사용한 이미지') :
+        st.image(img)
 
     
