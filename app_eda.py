@@ -15,6 +15,7 @@ wc = WordCloud(background_color='white', mask= img_mask, stopwords= stopwords).g
 
 def run_eda() :
     st.title('탐색적 데이터 분석')
+    st.subheader('(Exploratory Data Analysis)')
 
     radio_menu = ['전체 데이터 보기', '통계치']
     selected = st.radio('선택하세요.', radio_menu)

@@ -1,4 +1,5 @@
 import streamlit as st
 
 def run_home() :
-    st.subheader('')
+    st.title('그래픽카드 비교')
+    st.subheader('각 제조사별로 그래픽카드를 비교하여 볼수 있는 앱')

@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 
 def run_compare() :
+    st.subheader('비교하기')
+
     df = pd.read_csv('data/GPU.csv')
 
     m_columns = df['manufacturer'].unique()
@@ -41,3 +43,6 @@ def run_compare() :
 
             st.dataframe(product_choice2)
 
+    # st.text('선택1 과 선택2의 성능을 비교하며 선택1 또는 선택2가 높은것은 무엇이며,')
+    # st.text('얼마나 차이나고, 같은 년도에 출시한 다른 그래픽카드의 평균과 비교하여')
+    # st.text('선택1 또는 선택2가 평균보다 높은지 낮은지를 나타내주는 것') 
