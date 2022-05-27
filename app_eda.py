@@ -6,7 +6,7 @@ import seaborn as sns
 from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
 
-df = pd.read_csv('data/GPUs.csv')
+df = pd.read_csv('data/GPU.csv')
 img = Image.open('data/GPU.jpg')
 img_mask = np.array(img)
 gpu_names = ' '.join(i for i in df['productName'].astype(str))
@@ -24,6 +24,27 @@ def run_eda() :
     elif selected == radio_menu[1] :
         st.dataframe(df.describe())
 
+    select_menu = ['연도별 GPU출시(최신순)', '연도별 GPU출시(많은순)']
+    select_box = st.selectbox('선택하여 보기', select_menu)
+
+    if select_box == select_menu[0] :
+        df['releaseYear'].value_counts().sort_index(ascending=False).plot.bar()
+        plt.title('2005 - 2023 Released GPU')
+        plt.xlabel('Year')
+        plt.ylabel('GPUs Count')
+        plt.show()
+        st.pyplot()
+        st.set_option('deprecation.showPyplotGlobalUse', False)
+
+    elif select_box == select_menu[1] :
+        df['releaseYear'].value_counts().plot.bar()
+        plt.title('2005 - 2023 Released GPU')
+        plt.xlabel('Year')
+        plt.ylabel('GPUs Count')
+        plt.show()
+        st.pyplot()
+        st.set_option('deprecation.showPyplotGlobalUse', False)
+
     if st.button('워드클라우드 보기') :
         fig = plt.figure(figsize=(10, 6))
         plt.imshow(wc)
@@ -35,5 +56,7 @@ def run_eda() :
             st.text(' ')
     if st.button('사용한 이미지') :
         st.image(img)
+        if st.button('닫기') :
+            st.text('')
 
     
