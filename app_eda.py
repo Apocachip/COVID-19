@@ -15,11 +15,24 @@ wc = WordCloud(background_color='white', mask= img_mask, stopwords= stopwords).g
 
 def run_eda() :
     st.title('탐색적 데이터 분석')
-    
-    if st.button('전체 데이터 보기') :
+
+    radio_menu = ['전체 데이터 보기', '통계치']
+    selected = st.radio('선택하세요.', radio_menu)
+
+    if selected == radio_menu[0] :
         st.dataframe(df)
-        if st.button('닫기') :
-            st.text('')
+    elif selected == radio_menu[1] :
+        st.dataframe(df.describe())
+
+    col_list = df.columns[ 2 :]
+    selected_col = st.selectbox('컬럼별 최대값, 최소값', col_list)
+
+    if selected_col :
+
+        df_max = df.loc[df[selected_col] == df[selected_col].max() , ]
+        df_min = df.loc[df[selected_col] == df[selected_col].min() , ]
+        st.dataframe(df_max)
+        st.dataframe(df_min) 
 
     if st.button('워드클라우드 보기') :
         plt.figure(figsize= (10, 6))
@@ -30,3 +43,5 @@ def run_eda() :
         st.pyplot()
         if st.button('닫기') :
             st.text(' ')
+
+    
