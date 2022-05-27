@@ -46,7 +46,7 @@ def run_eda() :
         st.pyplot()
         st.set_option('deprecation.showPyplotGlobalUse', False)
 
-    if st.button('워드클라우드 보기') :
+    if st.button('워드클라우드') :
         fig = plt.figure(figsize=(10, 6))
         plt.imshow(wc)
         plt.tight_layout(pad=0)
