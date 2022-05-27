@@ -24,9 +24,11 @@ def run_compare() :
 
             product_choice = now_product.loc[now_product['productName'].str.lower() == choice_graphic_card.lower()]
             
+            final_result1 = product_choice.iloc[ : , 1 : ]
+
             st.text('그래픽카드 1')
 
-            st.dataframe(product_choice)
+            st.dataframe(final_result1)
         
         choice_manufacturer2 = col2.selectbox('제조사 선택2', col_menu1)
 
@@ -42,9 +44,33 @@ def run_compare() :
 
             product_choice2 = now_product2.loc[now_product2['productName'].str.lower() == choice_graphic_card2.lower()]
 
+            final_result2 = product_choice2.iloc[ : , 1 : ]
+
             st.text('그래픽카드 2')
 
-            st.dataframe(product_choice2)
+            st.dataframe(final_result2)
+
+    test_unique1 = df['releaseYear'].unique()
+    test_menu1 = test_unique1.tolist()
+
+    test1 = st.select_slider('연도별 그래픽카드', test_menu1)
+
+    if test1 :
+        st.dataframe(df.loc[test1 == df['releaseYear']])
+
+        # test_product1 = df.loc[test1 == df['releaseYear']]
+
+
+
+
+
+
+
+
+
+
+
+
             
 # 그래픽카드 이름으로 검색기능
 # 그래픽카드 출시일로 검색기능
