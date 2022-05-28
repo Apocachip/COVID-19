@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def run_compare() :
     df = pd.read_csv('data/GPU.csv')
@@ -55,8 +57,17 @@ def run_compare() :
 
     test1 = st.select_slider('연도별 그래픽카드', test_menu1)
 
+
     if test1 :
-        st.dataframe(df.loc[test1 == df['releaseYear']])
+        selected_test1 = df.loc[test1 == df['releaseYear']]
+
+        st.dataframe(selected_test1)
+
+        # if test1 :
+        #     selected_test1.plot()
+        #     st.pyplot()
+
+        #     st.text(f'{test1}년도에는 {choice_manufacturer}제조사의 그래픽카드가 가장 많습니다.')
 
         # test_product1 = df.loc[test1 == df['releaseYear']]
 
