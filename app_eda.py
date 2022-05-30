@@ -43,9 +43,9 @@ def run_eda() :
         plt.xlabel('Year')
         plt.ylabel('GPUs Count')
         plt.show()
-        st.pyplot()
         st.set_option('deprecation.showPyplotGlobalUse', False)
-
+        st.pyplot()
+        
     if st.button('워드클라우드') :
         fig = plt.figure(figsize=(10, 6))
         plt.imshow(wc)
