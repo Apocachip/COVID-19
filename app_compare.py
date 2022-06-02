@@ -52,78 +52,13 @@ def run_compare() :
 
             st.dataframe(final_result2)
 
-    test_unique1 = df['releaseYear'].unique()
-    test_menu1 = test_unique1.tolist()
+    unique_year = df['releaseYear'].unique()
+    year_menu = unique_year.tolist()
 
-    test1 = st.select_slider('연도별 그래픽카드', test_menu1)
-
-
-    if test1 :
-        selected_test1 = df.loc[test1 == df['releaseYear']]
-
-        st.dataframe(selected_test1)
-
-        # if test1 :
-        #     selected_test1.plot()
-        #     st.pyplot()
-
-        #     st.text(f'{test1}년도에는 {choice_manufacturer}제조사의 그래픽카드가 가장 많습니다.')
-
-        # test_product1 = df.loc[test1 == df['releaseYear']]
+    slide_years = st.select_slider('연도별 그래픽카드', year_menu)
 
 
+    if slide_years :
+        year_selected = df.loc[slide_years == df['releaseYear']]
 
-
-
-
-
-
-
-
-
-
-            
-# 그래픽카드 이름으로 검색기능
-# 그래픽카드 출시일로 검색기능
-# 선택1 과 선택2의 성능을 비교하며 선택1 또는 선택2가 높은것은 무엇이며
-# 얼마나 차이나고, 같은 년도에 출시한 다른 그래픽카드의 평균과 비교하여
-# 선택1 또는 선택2가 평균보다 높은지 낮은지를 나타내주는 것        
-
-# def run_compare() :
-#     df = pd.read_csv('data/GPU.csv')
-
-#     m_columns = df['manufacturer'].unique()
-#     col_menu1 = m_columns.tolist()
-    
-#     choice_manufacturer = st.selectbox('제조사 선택', col_menu1)
-
-#     if choice_manufacturer :
-#         st.text(choice_manufacturer + '을/를 선택하셨습니다.')
-
-#         name_menu1 = df.loc[df['manufacturer'].str.lower() == choice_manufacturer.lower()]['productName']
-        
-#         choice_graphic_card = st.selectbox('그래픽카드 선택', name_menu1)
-
-#         if choice_graphic_card :
-#             now_product = df.loc[df['manufacturer'].str.lower() == choice_manufacturer.lower()]
-
-#             product_choice = now_product.loc[now_product['productName'].str.lower() == choice_graphic_card.lower()]
-
-#             st.dataframe(product_choice)
-
-#     choice_manufacturer2 = st.selectbox('제조사2 선택', col_menu1)
-
-#     if choice_manufacturer2 :
-#         st.text(choice_manufacturer2 + '을/를 선택하셨습니다.')
-
-#         name_menu2 = df.loc[df['manufacturer'].str.lower() == choice_manufacturer2.lower()]['productName']
-
-#         choice_graphic_card2 = st.selectbox('그래픽카드 선택2', name_menu2)
-
-#         if choice_graphic_card2 :
-#             now_product2 = df.loc[df['manufacturer'].str.lower() == choice_manufacturer2.lower()]
-
-#             product_choice2 = now_product2.loc[now_product2['productName'].str.lower() == choice_graphic_card2.lower()]
-
-#             st.dataframe(product_choice2)
-
+        st.dataframe(year_selected)
