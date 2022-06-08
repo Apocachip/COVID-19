@@ -29,10 +29,11 @@ def run_compare() :
             final_result1 = product_choice.iloc[ : , 1 : ]
 
             st.text('그래픽카드 1')
-            st.text('memSize : GB')
+            
 
             st.dataframe(final_result1)
-        
+            st.text('memSize : GB, memBusWidth : bits, puClock : MHz, memClock : MHz')
+
         choice_manufacturer2 = col2.selectbox('제조사 선택2', col_menu1)
 
         if choice_manufacturer2 :
