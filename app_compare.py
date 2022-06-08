@@ -23,6 +23,9 @@ def run_compare() :
         
         choice_graphic_card = col1.selectbox('그래픽카드 선택', name_menu1)
 
+        st.text('단위')
+        st.text('memSize : GB, memBusWidth : bits, puClock : MHz, memClock : MHz')
+
         if choice_graphic_card :
             now_product = df.loc[df['manufacturer'].str.lower() == choice_manufacturer.lower()]
 
@@ -31,8 +34,6 @@ def run_compare() :
             final_result1 = product_choice.iloc[ : , 1 : ]
 
             st.text('그래픽카드 1')
-
-            st.text('memSize : GB, memBusWidth : bits, puClock : MHz, memClock : MHz')
 
             st.dataframe(final_result1)
 
@@ -52,12 +53,13 @@ def run_compare() :
 
             st.text('그래픽카드 2')
 
-            st.text('memSize : GB, memBusWidth : bits, puClock : MHz, memClock : MHz')
-
             st.dataframe(final_result2)
 
-        st.text('성능비교')
-        st.dataframe(final_result1)
+    st.text('성능비교')
+    fff = pd.concat([final_result1, final_result2])
+    st.dataframe(fff)
+
+
 
     # unique_year = df['releaseYear'].unique()
     # year_menu = unique_year.tolist()
