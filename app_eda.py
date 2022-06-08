@@ -6,7 +6,7 @@ import seaborn as sns
 from wordcloud import WordCloud, STOPWORDS
 from PIL import Image
 
-df = pd.read_csv('data/GPU.csv')
+df = pd.read_csv('data/GPU_Specs_Mark.csv')
 img = Image.open('data/GPU.jpg')
 img_mask = np.array(img)
 gpu_names = ' '.join(i for i in df['productName'].astype(str))

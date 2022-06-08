@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 def run_compare() :
-    df = pd.read_csv('data/GPU.csv', index_col=False)
+    df = pd.read_csv('data/GPU_Specs_Mark.csv', index_col=False)
 
     m_columns = df['manufacturer'].unique()
     col_menu1 = m_columns.tolist()
