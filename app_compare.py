@@ -31,6 +31,7 @@ def run_compare() :
             st.text('그래픽카드 1')
 
             st.dataframe(final_result1)
+            st.text('memSize : GB', 'memBusWidth : bits', 'gpuClock : MHz', 'memClock : MHz')
         
         choice_manufacturer2 = col2.selectbox('제조사 선택2', col_menu1)
 
