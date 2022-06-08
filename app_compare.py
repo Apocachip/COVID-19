@@ -29,7 +29,7 @@ def run_compare() :
             final_result1 = product_choice.iloc[ : , 1 : ]
 
             st.text('그래픽카드 1')
-            st.text('memSize : GB', 'memBusWidth : bits', 'gpuClock : MHz', 'memClock : MHz')
+            st.text('memSize : GB')
 
             st.dataframe(final_result1)
         
