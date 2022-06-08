@@ -14,6 +14,8 @@ def run_compare() :
 
     choice_manufacturer = col1.selectbox('제조사 선택1', col_menu1)
 
+    choice_manufacturer2 = col2.selectbox('제조사 선택2', col_menu1)
+
     if choice_manufacturer :
         col1.text(choice_manufacturer + '을/를 선택하셨습니다.')
         
@@ -34,8 +36,6 @@ def run_compare() :
 
             st.dataframe(final_result1)
 
-        choice_manufacturer2 = col2.selectbox('제조사 선택2', col_menu1)
-
         if choice_manufacturer2 :
             col2.text(choice_manufacturer2 + '을/를 선택하셨습니다.')
 
@@ -55,14 +55,16 @@ def run_compare() :
             st.text('memSize : GB, memBusWidth : bits, puClock : MHz, memClock : MHz')
 
             st.dataframe(final_result2)
-
-    unique_year = df['releaseYear'].unique()
-    year_menu = unique_year.tolist()
-
-    slide_years = st.select_slider('연도별 그래픽카드', year_menu)
+        
 
 
-    if slide_years :
-        year_selected = df.loc[slide_years == df['releaseYear']]
+    # unique_year = df['releaseYear'].unique()
+    # year_menu = unique_year.tolist()
 
-        st.dataframe(year_selected)
+    # slide_years = st.select_slider('연도별 그래픽카드', year_menu)
+
+
+    # if slide_years :
+    #     year_selected = df.loc[slide_years == df['releaseYear']]
+
+    #     st.dataframe(year_selected)
