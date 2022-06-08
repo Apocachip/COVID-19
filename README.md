@@ -1,6 +1,7 @@
 # GPUs Compare App
 
 data by
+
 https://www.kaggle.com/datasets/alanjo/graphics-card-full-specs
 https://www.kaggle.com/datasets/alanjo/gpu-benchmarks
 
