@@ -36,8 +36,8 @@ def run_compare() :
 
             st.dataframe(final_result1)
 
-        if choice_manufacturer2 :
-            col2.text(choice_manufacturer2 + '을/를 선택하셨습니다.')
+    if choice_manufacturer2 :
+        col2.text(choice_manufacturer2 + '을/를 선택하셨습니다.')
 
         name_menu2 = df.loc[df['manufacturer'].str.lower() == choice_manufacturer2.lower()]['productName']
 
