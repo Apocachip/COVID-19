@@ -56,6 +56,7 @@ def run_compare() :
 
             st.dataframe(final_result2)
 
+        st.text('성능비교')
         st.dataframe(final_result1)
 
     # unique_year = df['releaseYear'].unique()
