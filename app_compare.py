@@ -55,8 +55,8 @@ def run_compare() :
             st.text('memSize : GB, memBusWidth : bits, puClock : MHz, memClock : MHz')
 
             st.dataframe(final_result2)
-        
 
+        st.dataframe(final_result1)
 
     # unique_year = df['releaseYear'].unique()
     # year_menu = unique_year.tolist()
