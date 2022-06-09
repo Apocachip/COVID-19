@@ -55,19 +55,17 @@ def run_compare() :
 
             st.dataframe(final_result2)
 
-    st.text('성능비교')
-    fff = pd.concat([final_result1, final_result2])
-    st.dataframe(fff)
+    # st.text('성능비교')
+    # fff = pd.concat([final_result1, final_result2])
+    # st.dataframe(fff)
+
+    unique_year = df['releaseYear'].unique()
+    year_menu = unique_year.tolist()
+
+    slide_years = st.select_slider('연도별 그래픽카드', year_menu)
 
 
+    if slide_years :
+        year_selected = df.loc[slide_years == df['releaseYear']]
 
-    # unique_year = df['releaseYear'].unique()
-    # year_menu = unique_year.tolist()
-
-    # slide_years = st.select_slider('연도별 그래픽카드', year_menu)
-
-
-    # if slide_years :
-    #     year_selected = df.loc[slide_years == df['releaseYear']]
-
-    #     st.dataframe(year_selected)
+        st.dataframe(year_selected)
