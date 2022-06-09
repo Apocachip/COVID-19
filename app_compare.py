@@ -59,6 +59,8 @@ def run_compare() :
     # fff = pd.concat([final_result1, final_result2])
     # st.dataframe(fff)
 
+
+
     unique_year = df['releaseYear'].unique()
     year_menu = unique_year.tolist()
 
