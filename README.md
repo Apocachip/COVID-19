@@ -1,5 +1,6 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=6FC7E1&height=250&section=header&text=GPU/CPU%20Compare&fontColor=003153&fontSize=58&animation=fadeIn&fontAlignY=38&desc=Compare%20to%20Steam%20Games%20Recommended%20Requirements!&descAlignY=55&descAlign=57)
 
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fgjbae1212%2Fhit-counter&count_bg=%233DC1C8&title_bg=%239C9C9C&icon=github.svg&icon_color=%2345404D&title=Visit&edge_flat=false)](https://hits.seeyoufarm.com)
 
 
 # GPUs Compare App
