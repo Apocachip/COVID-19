@@ -1,5 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=GPUs%20Compare%20APP&fontSize=90&animation=fadeIn&fontAlignY=38&desc=%20Minimum%20&%20Recommended%20Specifications!&descAlignY=51&descAlign=62)
-
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=GPUs%20Compare%20APP&fontSize=90&animation=fadeIn&fontAlignY=38&desc=%20Minimum%20&%20Recommended%20Specifications%20!&descAlignY=51&descAlign=62)
 
 # GPUs Compare App
 
