@@ -29,3 +29,5 @@ http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
 ### DATA BY
 1. https://www.kaggle.com/datasets/alanjo/graphics-card-full-specs
 2. https://www.kaggle.com/datasets/alanjo/gpu-benchmarks
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=6FC7E1&height=100&section=footer)
