@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?text=GPUs%Compare%and%Game%Spec&animation=fadeIn&fontSize=50)
+![header](https://capsule-render.vercel.app/api?text=GPUs%20Compare%20and%20Game%20Spec&20animation=fadeIn&fontSize=50)
 
 # GPUs Compare App
 
