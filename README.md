@@ -1,6 +1,14 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=6FC7E1&height=250&section=header&text=GPU/CPU%20Compare&fontColor=003153&fontSize=58&animation=fadeIn&fontAlignY=38&desc=Compare%20to%20Steam%20Games%20Recommended%20Requirements!&descAlignY=55&descAlign=57)
 
 
+
+# 추가할것
+CPU성능과 밴치마크 점수를 비교하여볼수 있음
+Steam 게임 별 권장사양과 비교하여 선택한 GPU/CPU의 성능이 얼마나 더 좋은지 그래픽카드의 3Dmark 점수와 CPU의 밴치마크 점수를 합산또는 개별로 비교
+또 부족하다면 어떤부분이 더 부족한지 알아볼수 있음
+
+
+
 # GPUs Compare App
 
 http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
