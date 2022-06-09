@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=6FC7E1&height=250&section=header&text=GPU/CPU%20Compare&fontColor=003153&fontSize=58&animation=fadeIn&fontAlignY=38&desc=Check%20Steam%20Games%20Recommended%20Requirements!&descAlignY=55&descAlign=57)
+![header](https://capsule-render.vercel.app/api?type=waving&color=6FC7E1&height=250&section=header&text=GPU/CPU%20Compare&fontColor=003153&fontSize=58&animation=fadeIn&fontAlignY=38&desc=Compare%20to%20Steam%20Games%20Recommended%20Requirements!&descAlignY=55&descAlign=57)
 
 
 
