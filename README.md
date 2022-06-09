@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=GPUs%20Compare%20and%20Game%20Requirements&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Minimum%20or%20Recommended%20Requirements!&descAlignY=51&descAlign=62)
+![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=300&section=header&text=GPU/CPU%20Compare&fontSize=90&animation=fadeIn&fontAlignY=38&desc=Minimum%20or%20Recommended%20Requirements!&descAlignY=51&descAlign=62)
 
 
 
