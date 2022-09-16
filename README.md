@@ -4,10 +4,19 @@
 
 http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
 
+[![NumPy Badge](https://img.shields.io/badge/NumPy-013243?style=flat&logo=NumPy&logoColor=white)](https://numpy.org/install/)
+[![pandas Badge](https://img.shields.io/badge/pandas-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org/)
+[![Streamlit Badge](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=Streamlit&logoColor=white)](https://streamlit.io/)
+[![flask-restful Badge](https://img.shields.io/badge/flask-restful-000000?style=flat&logo=flask-restful&logoColor=white)](https://flask-restful.readthedocs.io/en/latest/installation.html)
+
+---
+
 - NVIDIA 와 AMD의 그래픽카드의 성능을 비교하여 볼수있다.
 - benchmark점수를 비교하여 더 좋은 그래픽카드는 무엇인지 알아볼수 있다.
 - 연도별로 출시한 그래픽카드를 보며 확인할수 있다.
 - 사용 언어 : Python
+
+---
 
 ## 컬럼명 설명
 1. manufacturer : 제조사
