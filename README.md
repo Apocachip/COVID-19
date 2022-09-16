@@ -26,7 +26,6 @@ http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
 
 
 ## 과정
----
 
 - FLASK와 Streamlit을 이용하여 웹 개발 환경을 구축하고 개발하였습니다.
 - AWS - EC2로 서버를 구축하여 배포하고 관리합니다.
