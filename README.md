@@ -11,10 +11,26 @@ http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 [![Streamlit Badge](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=Streamlit&logoColor=white)](https://streamlit.io/)
 
+## 기능
 ---
 
+- NVIDIA 와 AMD의 그래픽카드의 성능을 비교하여 볼수있다.
+- benchmark점수를 비교하여 더 좋은 그래픽카드는 무엇인지 알아볼수 있다.
+- WordCloud를 이용하여 데이터의 빈도를 눈으로 확인할수 있다.
+- 탐색적 데이터 분석 (Exploratory Data Analysis)
+  - 전체 데이터
+  - 통계치
+  - 연도별로 출시한 그래픽카드를 보며 확인할수 있다.
+
+---
+
+
+## 과정
+---
+
+- FLASK와 Streamlit을 이용하여 웹 개발 환경을 구축하고 개발하였습니다.
 - AWS - EC2로 서버를 구축하여 배포하고 관리합니다.
-- FLASK를 이용하여
+- Google Colab을 이용하여 데이터 가공을 하였습니다.
 
 ---
 
