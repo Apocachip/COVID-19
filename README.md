@@ -4,6 +4,7 @@
 
 http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
 ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white)
@@ -12,10 +13,8 @@ http://ec2-3-34-135-181.ap-northeast-2.compute.amazonaws.com:8501
 
 ---
 
-- NVIDIA 와 AMD의 그래픽카드의 성능을 비교하여 볼수있다.
-- benchmark점수를 비교하여 더 좋은 그래픽카드는 무엇인지 알아볼수 있다.
-- 연도별로 출시한 그래픽카드를 보며 확인할수 있다.
-- 사용 언어 : ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+- AWS - EC2로 서버를 구축하여 배포하고 관리합니다.
+- FLASK를 이용하여
 
 ---
 
